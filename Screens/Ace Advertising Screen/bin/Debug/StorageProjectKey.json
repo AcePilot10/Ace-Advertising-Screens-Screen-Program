@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ace-advertising-screens",
+  "private_key_id": "e85daf0376a79df087646f55b4aec50ac4db043b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC46ixrO8tINehP\n7N9EISmPgpIQFO28JVmmLT75F8yaZGdOdvmusHm3dahdu1uGmn253wDQ3sSqR6OX\na6fnELSBSF3gpA1eF+wJEL0s9HEcKrIZDGPDQSdg/4RtZ24CQfVIrEIM+mXseXHS\nrK+JU9rRMcndlgOogzp4tknGTZixMa+/XInTJ3M+29KCrfX8XupU22f24PjrCcl5\nu097/IWO6j9BN9oUhjhmUPirpW6Dt1TKVqwTw503rBeUaB6FQ5UtKkeMxkm/Hxx+\n8WNpTJa1Sc4a0m1XbK/vwZVdbA/xogJyJyuaO9tFWHleQb4i3IsXQ+Z2KQk6nOZ3\nU71qcJSNAgMBAAECggEAV7ivjcd17jG0nYXvfLCGuM/mXr6u8Rx+5Ph98Uk7BNsw\nruZ+GEMb2s50KtMg3kAX+L8z8eJcRbNqhgDKTDF+j/42msT4mnSawsowFE16AzS1\n/HAGO7CC798HgacZZvTHWcxuIR4AkCgkuR62v10KZ0dJTldGMQDgEjfX070n/JaX\naP6DkkIIN0vHOPNGiGfN5HYhx9+qAo3XldmKWMMaoo9YmIbvnbVr7IJapFPC2UB1\n5WQMX2CSteDQy0mU3W/e/Xz1+7dR8GMSlVKHskL57fgwLy7pRKPQEa36JaXwooWR\n/Sdm3LpZWdqtrJG0Kl/N39GoOlKytgJr5EWjkWxqeQKBgQD3795poiNKnpS4kVcx\nIHSjvpT/uV9JVhQys7OqgYWmZNaAKEQoTO/FPbgKgmXzipZL0ukbDtaytYJv+xZq\ngw6yYHfXSIQGanfUeZJYnsbmkddFxbfrH2ss98o2qOX+tg6bWcmeUMELL8NVMfEM\nv2Tn3mvyfHuSW2k+l5WXAp2T/wKBgQC+7aFdAKskvr6CQ3ZcBjxmmWdf8K+7dCfZ\nX7xh8ygsszFH93nHP7+bcM8E7mMK0MmP9WLp1m13jk3DoIuv1XCMEPVnL+B15A0d\nCRFFNtQsqgJQ8C06u8bHnNz4//sWvuznYJ3xYWG7HlO3cGJGaOK6oGqrPCLXjTJb\nBvD0wuTncwKBgDrnX/3UqXHG7ypSTVa8kTl9w8Rlc//mVXIeQ2cU0n3Poy5bYqX4\ncVZ47UqB5FrR6Bcnin4FLnjSqqSUEKVJcaprRM1+yu8DSGjQYTZwsmyA5ZYL/T/8\n/Od4DzChO9MhyaKa2E2mfdZ8iHmrHcubhQuZSigX7vu8f+qA9Oclle5dAoGBAILV\n+JPw11bQ12AQttUM+OseCHb4SpRcXspZDpDYvhkTmpvEfNELYFQ2k8a/TWOl+9oI\nwAWaCV26SJPcOpz92KhDHsfdSSXAZzQUeJ9DmVYaEohAbd4nu2oillKTqA7IOzO7\nQ8CbiQtfFuNHwjCZw3U8ZJx/Eyk++tjiAtDXlWD9AoGAK8lzIem0by9hewXJDcz+\nAz99zMLPQxO4/3QbdmjRENlDaXb8PBwLZmrTcbV1EJNd1KGMAHfpxtejK/1mARwy\nEg+wLMWiOFJ15udZQficdsxu95IEBRUjstGdK2QLLcQqnuVNEaEr8LPpfP168pmx\nqTemWI/mTHld4bRONgBHZc4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "ace-advertising-screens@ace-advertising-screens.iam.gserviceaccount.com",
+  "client_id": "106962751935753229898",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ace-advertising-screens%40ace-advertising-screens.iam.gserviceaccount.com"
+}

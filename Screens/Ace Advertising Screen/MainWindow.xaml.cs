@@ -100,7 +100,7 @@ namespace Ace_Advertising_Screen
         }
         #endregion
         #region Listeners
-        private void btnRegisterScreen_Click(object sender, RoutedEventArgs e)
+        private void BtnRegisterScreen_Click(object sender, RoutedEventArgs e)
         {
             Register();
         }

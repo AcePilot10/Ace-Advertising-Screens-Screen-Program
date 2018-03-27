@@ -121,7 +121,22 @@
     <Compile Include="Content\ContentManager.cs" />
     <Compile Include="Content\ContentTimerManager.cs" />
     <Compile Include="Entity Framework\Ad.cs">
-      <DependentUpon>Ads.tt</DependentUpon>
+      <DependentUpon>AdDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Framework\AdDatabase.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdDatabase.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Framework\AdDatabase.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdDatabase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entity Framework\AdDatabase.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdDatabase.edmx</DependentUpon>
     </Compile>
     <Compile Include="Entity Framework\Ads.Context.cs">
       <AutoGen>True</AutoGen>
@@ -133,10 +148,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Ads.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entity Framework\Ads.Designer.cs">
+    <Compile Include="Entity Framework\Ads [OLD].Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Ads.edmx</DependentUpon>
+      <DependentUpon>Ads [OLD].edmx</DependentUpon>
     </Compile>
     <Compile Include="Enumerators\Content.cs" />
     <Compile Include="Enumerators\Screen.cs" />
@@ -163,12 +178,19 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Entity Framework\Ads.edmx">
+    <EntityDeploy Include="Entity Framework\Ads [OLD].edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Ads.Designer.cs</LastGenOutput>
+      <LastGenOutput>Ads [OLD].Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Entity Framework\Ads.edmx.diagram">
-      <DependentUpon>Ads.edmx</DependentUpon>
+    <EntityDeploy Include="Entity Framework\AdDatabase.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AdDatabase.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Entity Framework\AdDatabase.edmx.diagram">
+      <DependentUpon>AdDatabase.edmx</DependentUpon>
+    </None>
+    <None Include="Entity Framework\Ads [OLD].edmx.diagram">
+      <DependentUpon>Ads [OLD].edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -183,16 +205,27 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Entity Framework\AdDatabase.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AdDatabase.edmx</DependentUpon>
+      <LastGenOutput>AdDatabase.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Entity Framework\AdDatabase.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AdDatabase.edmx</DependentUpon>
+      <LastGenOutput>AdDatabase.cs</LastGenOutput>
+    </Content>
     <Content Include="Entity Framework\Ads.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Ads.edmx</DependentUpon>
+      <DependentUpon>Ads [OLD].edmx</DependentUpon>
       <LastGenOutput>Ads.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Entity Framework\Ads.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Ads.edmx</DependentUpon>
+      <DependentUpon>Ads [OLD].edmx</DependentUpon>
       <LastGenOutput>Ads.cs</LastGenOutput>
     </Content>
+    <Resource Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

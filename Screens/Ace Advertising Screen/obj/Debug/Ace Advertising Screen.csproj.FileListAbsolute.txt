@@ -47,3 +47,51 @@ C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens
 C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\System.Interactive.Async.xml
 C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen_Content.g.cs
 C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen.csproj.CopyComplete
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Ace Advertising Screen.exe.config
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Ace Advertising Screen.exe
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Ace Advertising Screen.pdb
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\EntityFramework.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\EntityFramework.SqlServer.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Api.Gax.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Api.Gax.Rest.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Apis.Auth.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Apis.Core.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Apis.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Apis.PlatformServices.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Apis.Storage.v1.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Cloud.Storage.V1.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Newtonsoft.Json.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\System.Interactive.Async.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\System.Net.Http.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\System.Security.Cryptography.Algorithms.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\System.Security.Cryptography.Encoding.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\System.Security.Cryptography.Primitives.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\EntityFramework.xml
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\EntityFramework.SqlServer.xml
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Api.Gax.pdb
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Api.Gax.xml
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Api.Gax.Rest.pdb
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Api.Gax.Rest.xml
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Apis.xml
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Apis.Auth.xml
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Apis.Core.xml
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Apis.Storage.v1.xml
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Cloud.Storage.V1.pdb
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Google.Cloud.Storage.V1.xml
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\Newtonsoft.Json.xml
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\bin\Debug\System.Interactive.Async.xml
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen.csprojResolveAssemblyReference.cache
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\MainWindow.g.cs
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\App.g.cs
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen_Content.g.cs
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen_MarkupCompile.cache
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen_MarkupCompile.lref
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\MainWindow.baml
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen.g.resources
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\Ace_Advertising_Screen.Properties.Resources.resources
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen.csproj.GenerateResource.Cache
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen.csproj.CoreCompileInputs.cache
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen.exe
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen.pdb

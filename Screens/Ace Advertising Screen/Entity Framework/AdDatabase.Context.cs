@@ -13,12 +13,9 @@ namespace Ace_Advertising_Screen.Entity_Framework
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class AceAdvertisingScreensEntities : DbContext
+    public partial class AdContext : DbContext
     {
-        public AceAdvertisingScreensEntities()
-            : base("name=AceAdvertisingScreensEntities")
-        {
-        }
+        public AdContext() : base("name=AdDatabase") { }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

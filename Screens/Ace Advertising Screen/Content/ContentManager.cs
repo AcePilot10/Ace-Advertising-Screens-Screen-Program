@@ -9,6 +9,7 @@ using System.Drawing;
 using Google.Cloud.Storage.V1;
 using System.IO;
 using System.Windows;
+using Google.Apis.Auth.OAuth2;
 
 namespace Ace_Advertising_Screen.Content
 {
@@ -26,7 +27,7 @@ namespace Ace_Advertising_Screen.Content
         }
         #endregion
         #region Variables
-        private AdsContext context;
+        private AdContext context;
         const int CONTENT_MAIN = 0;
         const int CONTENT_SIDE_1 = 1;
         const int CONTENT_SIDE_2 = 2;
@@ -49,7 +50,7 @@ namespace Ace_Advertising_Screen.Content
         #region Initialization
         public ContentManager()
         {
-            context = new AdsContext();
+            context = new AdContext();
             sidePanel1Content = new List<string>();
             sidePanel2Content = new List<string>();
             mainPanelContent = new List<string>();
@@ -103,7 +104,9 @@ namespace Ace_Advertising_Screen.Content
         }
         public void DownloadAndSetContent(Enumerators.Content content, String fileName)
         {
-            StorageClient client = StorageClient.Create();
+            Uri fileLocation = new Uri(baseDirectory + "/StorageProjectKey.json");
+            GoogleCredential credential = GoogleCredential.FromFile(fileLocation.LocalPath);
+            StorageClient client = StorageClient.Create(credential);
             FileStream destination = null;
             Uri uri = null;
             switch (content)
