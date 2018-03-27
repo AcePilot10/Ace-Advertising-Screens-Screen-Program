@@ -59,26 +59,34 @@ namespace Ace_Advertising_Screen.Content
         }
         private void LoadContent()
         {
-            foreach (Ad ad in context.Ads)
+            try
             {
-                String venue = ad.Venue;
-                if (venue == MainWindow.VENUE_NAME)
+                foreach (Ad ad in context.Ads)
                 {
-                    string url = ad.URL;
-                    int content = int.Parse(ad.Content_Type);
-                    switch (content)
+                    String venue = ad.Venue;
+                    if (venue == MainWindow.VENUE_NAME)
                     {
-                        case CONTENT_MAIN:
-                            mainPanelContent.Add(url);
-                            break;
-                        case CONTENT_SIDE_1:
-                            sidePanel1Content.Add(url);
-                            break;
-                        case CONTENT_SIDE_2:
-                            sidePanel2Content.Add(url);
-                            break;
+                        string url = ad.URL;
+                        int content = int.Parse(ad.Content_Type);
+                        switch (content)
+                        {
+                            case CONTENT_MAIN:
+                                mainPanelContent.Add(url);
+                                break;
+                            case CONTENT_SIDE_1:
+                                sidePanel1Content.Add(url);
+                                break;
+                            case CONTENT_SIDE_2:
+                                sidePanel2Content.Add(url);
+                                break;
+                        }
                     }
                 }
+            }
+            catch (System.Data.Entity.Core.EntityException ex)
+            {
+                MessageBox.Show("There was an error accessing the server: " + ex.Message + ". Please fix the issue and restart.");
+                Application.Current.Shutdown();
             }
         }
         #endregion

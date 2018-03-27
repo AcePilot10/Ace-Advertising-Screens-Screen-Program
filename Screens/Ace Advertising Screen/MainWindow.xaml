@@ -11,7 +11,7 @@
         <GroupBox x:Name="screenRegister" Header="Register Screen" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792" FontWeight="Bold" Background="White">
             <Grid>
                 <TextBox x:Name="txtVenueName" HorizontalAlignment="Left" Height="39" Margin="205,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="329" VerticalContentAlignment="Center"/>
-                <Button x:Name="btnRegisterScreen"  HorizontalAlignment="Left" Height="59" Margin="276,240,0,0" VerticalAlignment="Top" Width="178" Content="Register Screen" Click="btnRegisterScreen_Click"/>
+                <Button x:Name="btnRegisterScreen"  HorizontalAlignment="Left" Height="59" Margin="276,240,0,0" VerticalAlignment="Top" Width="178" Content="Register Screen" Click="BtnRegisterScreen_Click"/>
             </Grid>
         </GroupBox>
 
