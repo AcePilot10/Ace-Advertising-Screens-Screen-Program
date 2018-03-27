@@ -1,0 +1,49 @@
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Ace Advertising Screen.exe.config
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Ace Advertising Screen.exe
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Ace Advertising Screen.pdb
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen.csprojResolveAssemblyReference.cache
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\obj\Debug\MainWindow.g.cs
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\obj\Debug\App.g.cs
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen_MarkupCompile.cache
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen_MarkupCompile.lref
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\obj\Debug\MainWindow.baml
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen.g.resources
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\obj\Debug\Ace_Advertising_Screen.Properties.Resources.resources
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen.csproj.GenerateResource.cache
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen.csproj.CoreCompileInputs.cache
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen.exe
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen.pdb
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\EntityFramework.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Api.Gax.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Api.Gax.Rest.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Apis.Auth.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Apis.Core.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Apis.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Apis.Storage.v1.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Cloud.Storage.V1.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Newtonsoft.Json.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\System.Interactive.Async.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\System.Net.Http.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\EntityFramework.xml
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Api.Gax.pdb
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Api.Gax.xml
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Api.Gax.Rest.pdb
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Api.Gax.Rest.xml
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Apis.xml
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Apis.Auth.xml
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Apis.Core.xml
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Apis.Storage.v1.xml
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Cloud.Storage.V1.pdb
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Google.Cloud.Storage.V1.xml
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\Newtonsoft.Json.xml
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\bin\Debug\System.Interactive.Async.xml
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen_Content.g.cs
+C:\Users\codyj\Documents\MSDN\C#\Ace Advertising Screens\Ace Advertising Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen.csproj.CopyComplete
