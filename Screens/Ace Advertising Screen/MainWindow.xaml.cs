@@ -33,6 +33,8 @@ namespace Ace_Advertising_Screen
             instance = this;
             InitContent();
             ShowScreen(Screen.CONTENT);
+
+            new TestWindow().Show();
         }
         public void InitContent()
         {

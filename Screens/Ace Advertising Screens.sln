@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27428.1
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ace Advertising Screen", "Ace Advertising Screen\Ace Advertising Screen.csproj", "{7C0F3031-73B1-4994-AB9B-F1E51CF66BAC}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DesignerTest", "DesignerTest\DesignerTest.vbproj", "{78C027D9-75E8-46EF-A202-D700996BE4F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7C0F3031-73B1-4994-AB9B-F1E51CF66BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C0F3031-73B1-4994-AB9B-F1E51CF66BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C0F3031-73B1-4994-AB9B-F1E51CF66BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78C027D9-75E8-46EF-A202-D700996BE4F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C027D9-75E8-46EF-A202-D700996BE4F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C027D9-75E8-46EF-A202-D700996BE4F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C027D9-75E8-46EF-A202-D700996BE4F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

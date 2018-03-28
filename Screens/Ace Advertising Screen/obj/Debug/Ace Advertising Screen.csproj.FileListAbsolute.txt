@@ -95,3 +95,5 @@ D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Scree
 D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen.csproj.CoreCompileInputs.cache
 D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen.exe
 D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\Ace Advertising Screen.pdb
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\TestWindow.g.cs
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Screens\Ace Advertising Screen\obj\Debug\TestWindow.baml
