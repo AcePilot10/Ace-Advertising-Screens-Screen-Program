@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Timers;
 using System.Windows;
 using Ace_Advertising_Screen.Enumerators;
+using Ace_Advertising_Screen.Content.Screen_Timer;
 
 namespace Ace_Advertising_Screen.Content
 {
@@ -15,79 +16,9 @@ namespace Ace_Advertising_Screen.Content
         #region Events
         public delegate void ScreenTimerComplete(Enumerators.Content content);
         public static event ScreenTimerComplete OnScreenTimerComplete;
-        #endregion
-        #region Timer Classes
-        public class ScreenTimerBase
+        public static void TriggerOnScreenTimerComplete(Enumerators.Content content)
         {
-            #region Variables
-            protected float duration = 0f;
-            protected Thread thread;
-            private System.Timers.Timer timer;
-            protected float currentTime = 0f;
-            #endregion
-            #region Functions
-            private void ThreadStart()
-            {
-                timer = new System.Timers.Timer(1000);
-                timer.Elapsed += OnTimerEvent;
-                timer.Start();               
-            }
-            public virtual void OnTimerEvent(Object source, ElapsedEventArgs e)
-            {
-                currentTime++;
-                if (currentTime >= duration)
-                {
-                    timer.Stop();
-                    timer.Dispose();
-                    TimerComplete();
-                }
-            }   
-            public virtual void TimerComplete() {}
-            public virtual void Init()
-            {
-                thread = new Thread(new ThreadStart(ThreadStart));
-                thread.Start();
-            }
-            #endregion
-        }
-
-        public class ScreenMainTimer : ScreenTimerBase
-        {
-            public ScreenMainTimer(float duration)
-            {
-                base.duration = duration;
-                Init();
-            }
-            public override void TimerComplete()
-            {
-                OnScreenTimerComplete?.Invoke(Enumerators.Content.MAIN);
-            }
-        }
-
-        public class ScreenSide1Timer : ScreenTimerBase
-        {
-            public ScreenSide1Timer(float duration)
-            {
-                base.duration = duration;
-                Init();
-            }
-            public override void TimerComplete()
-            {
-                OnScreenTimerComplete?.Invoke(Enumerators.Content.SIDE_1);
-            }
-        }
-
-        public class ScreenSide2Timer : ScreenTimerBase
-        {
-            public ScreenSide2Timer(float duration)
-            {
-                base.duration = duration;
-                Init();
-            }
-            public override void TimerComplete()
-            {
-                OnScreenTimerComplete?.Invoke(Enumerators.Content.SIDE_2);
-            }
+            OnScreenTimerComplete?.Invoke(content);
         }
         #endregion
         #region Singleton
@@ -101,10 +32,69 @@ namespace Ace_Advertising_Screen.Content
             return instance;
         }
         #endregion
+        #region Variables
+        private Thread thread;
+        private Entity_Framework.AdContext context;
+        #endregion
         #region Initialization
+       
+        /*
+        private float GetTimerDuration(Enumerators.Content contentType)
+        {
+            float time = 4f;
+            switch (contentType)
+            {
+                case Enumerators.Content.MAIN:
+                    int index = ContentManager.GetManager().currentMainIndex;
+                    String adUrl = ContentManager.GetManager().mainPanelContent[index];
+
+                    break;
+                case Enumerators.Content.SIDE_1:
+
+                    break;
+                case Enumerators.Content.SIDE_2:
+
+                    break;
+            }
+        }
+        */
+       
+        private void DebugPrintMainScreenDuration()
+        {
+            int index = ContentManager.GetManager().currentMainIndex;
+            //String adUrl = ContentManager.GetManager().mainPanelContent[index];
+            String adUrl = "cute-dog.jpg";
+
+            Entity_Framework.Ad ad = null;
+
+            foreach (Entity_Framework.Ad currentAd in context.Ads)
+            {
+                String currentAdUrl = currentAd.URL;
+                if (adUrl == currentAdUrl)
+                {
+                    ad = currentAd;
+                }
+            }
+
+            double? duration = ad.Duration;
+            MessageBox.Show("Main Content Duration: " + duration);
+
+        }
+
         public ContentTimerManager()
         {
+            thread = new Thread(new ThreadStart(StartContent))
+            {
+                Name = "Content Timer Thread"
+            };
+            context = new Entity_Framework.AdContext();
+            thread.Start();
+        }
+        
+        public void StartContent()
+        {
             StartNewTimer(Enumerators.Content.MAIN, 5f);
+            //DebugPrintMainScreenDuration();
             StartNewTimer(Enumerators.Content.SIDE_1, 5f);
             StartNewTimer(Enumerators.Content.SIDE_2, 5f);
         }
@@ -122,6 +112,7 @@ namespace Ace_Advertising_Screen.Content
                     new ScreenSide2Timer(duration);
                     break;
             }
+            Console.WriteLine("Switched content on screen: " + content);
         }
         #endregion
     }

@@ -10,7 +10,5 @@
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("entity%20framework/addatabase.context.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("entity%20framework/addatabase.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("entity%20framework/ads.context.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("entity%20framework/ads.tt")]
 
 

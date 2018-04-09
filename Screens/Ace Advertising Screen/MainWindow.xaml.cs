@@ -31,16 +31,9 @@ namespace Ace_Advertising_Screen
         {
             InitializeComponent();
             instance = this;
-            InitContent();
-            ShowScreen(Screen.CONTENT);
-        }
-        public void InitContent()
-        {
             ContentManager.GetManager();
-            ContentManager.GetManager().SetNextContent(Enumerators.Content.MAIN);
-            ContentManager.GetManager().SetNextContent(Enumerators.Content.SIDE_1);
-            ContentManager.GetManager().SetNextContent(Enumerators.Content.SIDE_2);
-            ContentTimerManager.GetInstance();
+            ContentManager.GetManager().InitContent();
+            ShowScreen(Screen.CONTENT);
         }
         #endregion
         #region Funcionality

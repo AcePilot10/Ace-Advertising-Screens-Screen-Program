@@ -10,6 +10,7 @@ using Google.Cloud.Storage.V1;
 using System.IO;
 using System.Windows;
 using Google.Apis.Auth.OAuth2;
+using System.Diagnostics;
 
 namespace Ace_Advertising_Screen.Content
 {
@@ -86,13 +87,22 @@ namespace Ace_Advertising_Screen.Content
             catch (System.Data.Entity.Core.EntityException ex)
             {
                 MessageBox.Show("There was an error accessing the server: " + ex.Message + ". Please fix the issue and restart.");
+                MainWindow.instance.Close();
                 Application.Current.Shutdown();
+                Process.GetCurrentProcess().Kill();
             }
+        }
+        public void InitContent()
+        {
+            ContentTimerManager.GetInstance();
+            SetNextContent(Enumerators.Content.MAIN);
+            SetNextContent(Enumerators.Content.SIDE_1);
+            SetNextContent(Enumerators.Content.SIDE_2);
         }
         #endregion
         #region Functions
         #region Downloading Content
-        public Uri DownloadContent(string url)
+        private Uri DownloadContent(string url)
         {
             string location = baseDirectory + url;
             using (WebClient client = new WebClient())
@@ -101,7 +111,7 @@ namespace Ace_Advertising_Screen.Content
             }
             return new Uri(location);
         }
-        public Uri DownloadContentFromBucket(string name)
+        private Uri DownloadContentFromBucket(string name)
         {
             string bucketName = "ace_advertising_screens-content";
             StorageClient client = StorageClient.Create();
@@ -110,7 +120,7 @@ namespace Ace_Advertising_Screen.Content
             destination.Close();
             return new Uri(baseDirectory + "/mainContentImage.jpg");
         }
-        public void DownloadAndSetContent(Enumerators.Content content, String fileName)
+        private void DownloadAndSetContent(Enumerators.Content content, String fileName)
         {
             Uri fileLocation = new Uri(baseDirectory + "/StorageProjectKey.json");
             GoogleCredential credential = GoogleCredential.FromFile(fileLocation.LocalPath);
@@ -184,11 +194,12 @@ namespace Ace_Advertising_Screen.Content
         #endregion
         public void OnContentTimerComplete(Enumerators.Content content)
         {
-            Application.Current.Dispatcher.Invoke(delegate () {
+            Application.Current.Dispatcher.Invoke(delegate ()
+            {
                 SwitchContent(content);
             });
         }
-        public void SwitchContent(Enumerators.Content content)
+        private void SwitchContent(Enumerators.Content content)
         {
             switch (content)
             {

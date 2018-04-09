@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Ad.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="AdContext.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <!--Errors Found During Generation:
 warning 6002: The table/view 'Ace Advertising Screens.dbo.Ads' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="Ads">
@@ -18,14 +18,16 @@ warning 6002: The table/view 'Ace Advertising Screens.dbo.Ads' does not have a p
           <Property Name="Content Type" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="URL" Type="varchar(max)" Nullable="false" />
           <Property Name="Company" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Duration" Type="float" />
         </EntityType>
-        <EntityContainer Name="AdStoreContainer">
+        <EntityContainer Name="AdContextStoreContainer">
           <EntitySet Name="Ads" EntityType="Self.Ads" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [Ads].[Venue] AS [Venue], 
     [Ads].[Content Type] AS [Content Type], 
     [Ads].[URL] AS [URL], 
-    [Ads].[Company] AS [Company]
+    [Ads].[Company] AS [Company], 
+    [Ads].[Duration] AS [Duration]
     FROM [dbo].[Ads] AS [Ads]</DefiningQuery>
           </EntitySet>
         </EntityContainer>
@@ -33,7 +35,7 @@ warning 6002: The table/view 'Ace Advertising Screens.dbo.Ads' does not have a p
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="Ad" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="AdContext" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Ad">
           <Key>
             <PropertyRef Name="Venue" />
@@ -45,6 +47,7 @@ warning 6002: The table/view 'Ace Advertising Screens.dbo.Ads' does not have a p
           <Property Name="Content_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="URL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Company" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Duration" Type="Double" />
         </EntityType>
         <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Ads" EntityType="Self.Ad" />
@@ -54,14 +57,15 @@ warning 6002: The table/view 'Ace Advertising Screens.dbo.Ads' does not have a p
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="AdStoreContainer" CdmEntityContainer="Entities">
+        <EntityContainerMapping StorageEntityContainer="AdContextStoreContainer" CdmEntityContainer="Entities">
           <EntitySetMapping Name="Ads">
-            <EntityTypeMapping TypeName="Ad.Ad">
+            <EntityTypeMapping TypeName="AdContext.Ad">
               <MappingFragment StoreEntitySet="Ads">
                 <ScalarProperty Name="Venue" ColumnName="Venue" />
                 <ScalarProperty Name="Content_Type" ColumnName="Content Type" />
                 <ScalarProperty Name="URL" ColumnName="URL" />
                 <ScalarProperty Name="Company" ColumnName="Company" />
+                <ScalarProperty Name="Duration" ColumnName="Duration" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

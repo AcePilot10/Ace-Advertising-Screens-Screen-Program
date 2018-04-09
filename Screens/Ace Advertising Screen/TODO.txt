@@ -1,2 +1,1 @@
-﻿- Add Registration
-- Add Duration For Ads
+﻿- Add ID in database and implement content loading and downloading with it
