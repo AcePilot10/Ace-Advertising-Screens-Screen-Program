@@ -184,24 +184,27 @@ namespace Ace_Advertising_Screen.Content
         #endregion
         public void OnContentTimerComplete(Enumerators.Content content)
         {
-            Application.Current.Dispatcher.Invoke(() =>
-            {
-                switch (content)
-                {
-                    case Enumerators.Content.MAIN:
-                        SetNextContent(Enumerators.Content.MAIN);
-                        ContentTimerManager.GetInstance().StartNewTimer(Enumerators.Content.MAIN, 5f);
-                        break;
-                    case Enumerators.Content.SIDE_1:
-                        SetNextContent(Enumerators.Content.SIDE_1);
-                        ContentTimerManager.GetInstance().StartNewTimer(Enumerators.Content.SIDE_1, 5f);
-                        break;
-                    case Enumerators.Content.SIDE_2:
-                        SetNextContent(Enumerators.Content.SIDE_2);
-                        ContentTimerManager.GetInstance().StartNewTimer(Enumerators.Content.SIDE_2, 5f);
-                        break;
-                }
+            Application.Current.Dispatcher.Invoke(delegate () {
+                SwitchContent(content);
             });
+        }
+        public void SwitchContent(Enumerators.Content content)
+        {
+            switch (content)
+            {
+                case Enumerators.Content.MAIN:
+                    SetNextContent(Enumerators.Content.MAIN);
+                    ContentTimerManager.GetInstance().StartNewTimer(Enumerators.Content.MAIN, 5f);
+                    break;
+                case Enumerators.Content.SIDE_1:
+                    SetNextContent(Enumerators.Content.SIDE_1);
+                    ContentTimerManager.GetInstance().StartNewTimer(Enumerators.Content.SIDE_1, 5f);
+                    break;
+                case Enumerators.Content.SIDE_2:
+                    SetNextContent(Enumerators.Content.SIDE_2);
+                    ContentTimerManager.GetInstance().StartNewTimer(Enumerators.Content.SIDE_2, 5f);
+                    break;
+            }
         }
         #endregion
     }

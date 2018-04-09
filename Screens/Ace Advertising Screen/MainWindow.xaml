@@ -15,15 +15,23 @@
             </Grid>
         </GroupBox>
 
-        <Canvas x:Name="screenContent" HorizontalAlignment="Center" Height="399" Margin="0" VerticalAlignment="Center" Width="772">
-            <Canvas Height="389" Canvas.Left="237" Width="525">
-                <MediaElement x:Name="mediaMain" Height="369" Width="505" Canvas.Left="10" Canvas.Top="10"/>
-            </Canvas>
-            <Canvas x:Name="panelSideAds" HorizontalAlignment="Left" Height="389" VerticalAlignment="Top" Width="232">
-                <MediaElement x:Name="mediaSide1" HorizontalAlignment="Left" Height="188" VerticalAlignment="Top" Width="212" Canvas.Left="10" Canvas.Top="10"/>
-                <MediaElement x:Name="mediaSide2" Height="176" Canvas.Top="203" Width="212" Canvas.Left="10"/>
-            </Canvas>
-        </Canvas>
+        <Grid Background="Blue" x:Name="screenContent">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="11*"/>
+                <ColumnDefinition Width="62*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="1" Background="Purple" x:Name="mainPanel">
+                <MediaElement x:Name="mediaMain" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </Grid>
+            <Grid Background="Red" x:Name="sidePanel">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="132*"/>
+                    <RowDefinition Height="137*"/>
+                </Grid.RowDefinitions>
+                <MediaElement x:Name="mediaSide1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="0"/>
+                <MediaElement x:Name="mediaSide2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1"/>
+            </Grid>
+        </Grid>
 
     </Grid>
 </Window>
