@@ -12,6 +12,6 @@ namespace Ace_Advertising_Screen
     /// Interaction logic for App.xaml
     /// </summary>
     public partial class App : Application
-    {
+    { 
     }
 }

@@ -27,7 +27,7 @@ namespace Ace_Advertising_Screen.Content
             return instance;
         }
         #endregion
-        #region Variables
+        #region Fields
         private AdContext context;
         const int CONTENT_MAIN = 0;
         const int CONTENT_SIDE_1 = 1;
@@ -37,15 +37,15 @@ namespace Ace_Advertising_Screen.Content
         const string FILE_NAME_SIDE_1 = "/side1Image.jpg";
         const string FILE_NAME_SIDE_2 = "/side2Image.jpg";
         private string baseDirectory = System.AppDomain.CurrentDomain.BaseDirectory;
-        #region Current Indexes
-        public int currentMainIndex = 0;
-        public int currentSide1Index = 0;
-        public int currentSide2Index = 0;
-        #endregion
         #region Lists
         public List<string> sidePanel1Content;
         public List<string> sidePanel2Content;
         public List<string> mainPanelContent;
+        #endregion
+        #region Current Indexes
+        public int currentMainIndex = 0;
+        public int currentSide1Index = 0;
+        public int currentSide2Index = 0;
         #endregion
         #endregion
         #region Initialization
@@ -192,6 +192,17 @@ namespace Ace_Advertising_Screen.Content
             }
         }
         #endregion
+        public void ResetContent()
+        {
+            //1: Clear arrays
+            //2: Repopulate arrays
+            //3: Restart
+            mainPanelContent.Clear();
+            sidePanel1Content.Clear();
+            sidePanel2Content.Clear();
+            LoadContent();
+            InitContent();
+        }
         public void OnContentTimerComplete(Enumerators.Content content)
         {
             Application.Current.Dispatcher.Invoke(delegate ()

@@ -10,7 +10,7 @@ using System.Windows;
 [assembly: AssemblyTitle("Ace Advertising Screen")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Ace Games")]
 [assembly: AssemblyProduct("Ace Advertising Screen")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
