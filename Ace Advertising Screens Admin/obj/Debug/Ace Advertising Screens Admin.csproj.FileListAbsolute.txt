@@ -1,0 +1,20 @@
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\bin\Debug\Ace Advertising Screens Admin.exe.config
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\bin\Debug\Ace Advertising Screens Admin.exe
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\bin\Debug\Ace Advertising Screens Admin.pdb
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\obj\Debug\Ace Advertising Screens Admin.csprojResolveAssemblyReference.cache
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\obj\Debug\MainWindow.g.cs
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\obj\Debug\App.g.cs
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\obj\Debug\Ace Advertising Screens Admin_MarkupCompile.cache
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\obj\Debug\Ace Advertising Screens Admin_MarkupCompile.lref
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\obj\Debug\MainWindow.baml
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\obj\Debug\Ace Advertising Screens Admin.g.resources
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\obj\Debug\Ace_Advertising_Screens_Admin.Properties.Resources.resources
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\obj\Debug\Ace Advertising Screens Admin.csproj.GenerateResource.Cache
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\obj\Debug\Ace Advertising Screens Admin.csproj.CoreCompileInputs.cache
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\obj\Debug\Ace Advertising Screens Admin.exe
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\obj\Debug\Ace Advertising Screens Admin.pdb
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\bin\Debug\EntityFramework.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\bin\Debug\EntityFramework.SqlServer.dll
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\bin\Debug\EntityFramework.xml
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\bin\Debug\EntityFramework.SqlServer.xml
+D:\Documents\MSDN Projects\Ace Advertising Screens\Ace-Advertising-Screens-Screen-Program\Ace Advertising Screens Admin\obj\Debug\Ace Advertising Screens Admin_Content.g.cs

@@ -12,6 +12,16 @@ namespace Ace_Advertising_Screen
     /// Interaction logic for App.xaml
     /// </summary>
     public partial class App : Application
-    { 
+    {
+        private Heartbeat.Heartbeat heartbeat;
+
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            Console.WriteLine("Initiating Heartbeat!");
+            heartbeat = new Heartbeat.Heartbeat();
+            heartbeat.Init();
+            base.OnStartup(e);
+           
+        }
     }
 }

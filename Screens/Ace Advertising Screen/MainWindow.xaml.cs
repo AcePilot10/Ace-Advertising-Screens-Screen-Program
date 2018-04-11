@@ -10,9 +10,6 @@ namespace Ace_Advertising_Screen
 {
     public partial class MainWindow : Window
     {
-        #region Variables
-        public static string VENUE_NAME = "Test Venue";
-        #endregion
         #region Singleton
         public static MainWindow instance;
         #endregion
@@ -84,7 +81,8 @@ namespace Ace_Advertising_Screen
         #endregion
         #endregion
         #region Screen Management
-        public void ShowScreen(Screen screen) {
+        public void ShowScreen(Screen screen)
+        {
             CloseScreens();
             switch (screen)
             {
@@ -109,4 +107,4 @@ namespace Ace_Advertising_Screen
         }
         #endregion
     }
-}
+} 

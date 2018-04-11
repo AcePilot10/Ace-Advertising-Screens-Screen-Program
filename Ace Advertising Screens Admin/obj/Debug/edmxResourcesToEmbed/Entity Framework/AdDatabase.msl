@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AdContextStoreContainer" CdmEntityContainer="AdDatabase">
+    <EntitySetMapping Name="Ads">
+      <EntityTypeMapping TypeName="AdContext.Ad">
+        <MappingFragment StoreEntitySet="Ads">
+          <ScalarProperty Name="Venue" ColumnName="Venue" />
+          <ScalarProperty Name="Content_Type" ColumnName="Content Type" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

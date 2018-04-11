@@ -34,5 +34,17 @@ namespace Ace_Advertising_Screen.Properties {
                 this["Venue"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5")]
+        public int HeartbeatInterval {
+            get {
+                return ((int)(this["HeartbeatInterval"]));
+            }
+            set {
+                this["HeartbeatInterval"] = value;
+            }
+        }
     }
 }

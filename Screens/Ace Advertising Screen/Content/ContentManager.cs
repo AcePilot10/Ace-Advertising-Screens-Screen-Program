@@ -65,7 +65,7 @@ namespace Ace_Advertising_Screen.Content
                 foreach (Ad ad in context.Ads)
                 {
                     String venue = ad.Venue;
-                    if (venue == MainWindow.VENUE_NAME)
+                    if (venue == Properties.Settings.Default.Venue)
                     {
                         int id = ad.ID;
                         int content = int.Parse(ad.Content_Type);
@@ -245,21 +245,18 @@ namespace Ace_Advertising_Screen.Content
                     SetNextContent(Enumerators.Content.MAIN);
                     int idMain = mainPanelContent[currentMainIndex-1];
                     double? durationMain = GetDuration(idMain);
-                    Console.WriteLine(durationMain);
                     ContentTimerManager.GetInstance().StartNewTimer(Enumerators.Content.MAIN, (float)durationMain);
                     break;
                 case Enumerators.Content.SIDE_1:
                     SetNextContent(Enumerators.Content.SIDE_1);
                     int idSide1 = sidePanel1Content[currentSide1Index-1];
                     double? durationSide1 = GetDuration(idSide1);
-                    Console.WriteLine(durationSide1);
                     ContentTimerManager.GetInstance().StartNewTimer(Enumerators.Content.SIDE_1, (float)durationSide1);
                     break;
                 case Enumerators.Content.SIDE_2:
                     SetNextContent(Enumerators.Content.SIDE_2);
                     int idSide2 = sidePanel2Content[currentSide2Index-1];
                     double? durationSide2 = GetDuration(idSide2);
-                    Console.WriteLine(durationSide2);
                     ContentTimerManager.GetInstance().StartNewTimer(Enumerators.Content.SIDE_2, (float)durationSide2);
                     break;
             }
