@@ -13,12 +13,14 @@ warning 6002: The table/view 'Ace Advertising Screens.dbo.Ads' does not have a p
             <PropertyRef Name="Content Type" />
             <PropertyRef Name="URL" />
             <PropertyRef Name="Company" />
+            <PropertyRef Name="ID" />
           </Key>
           <Property Name="Venue" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Content Type" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="URL" Type="varchar(max)" Nullable="false" />
           <Property Name="Company" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Duration" Type="float" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityContainer Name="AdContextStoreContainer">
           <EntitySet Name="Ads" EntityType="Self.Ads" store:Type="Tables" store:Schema="dbo">
@@ -27,7 +29,8 @@ warning 6002: The table/view 'Ace Advertising Screens.dbo.Ads' does not have a p
     [Ads].[Content Type] AS [Content Type], 
     [Ads].[URL] AS [URL], 
     [Ads].[Company] AS [Company], 
-    [Ads].[Duration] AS [Duration]
+    [Ads].[Duration] AS [Duration], 
+    [Ads].[ID] AS [ID]
     FROM [dbo].[Ads] AS [Ads]</DefiningQuery>
           </EntitySet>
         </EntityContainer>
@@ -42,12 +45,14 @@ warning 6002: The table/view 'Ace Advertising Screens.dbo.Ads' does not have a p
             <PropertyRef Name="Content_Type" />
             <PropertyRef Name="URL" />
             <PropertyRef Name="Company" />
+            <PropertyRef Name="ID" />
           </Key>
           <Property Name="Venue" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Content_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="URL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Company" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Duration" Type="Double" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
         </EntityType>
         <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Ads" EntityType="Self.Ad" />
@@ -66,6 +71,7 @@ warning 6002: The table/view 'Ace Advertising Screens.dbo.Ads' does not have a p
                 <ScalarProperty Name="URL" ColumnName="URL" />
                 <ScalarProperty Name="Company" ColumnName="Company" />
                 <ScalarProperty Name="Duration" ColumnName="Duration" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

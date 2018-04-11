@@ -9,6 +9,7 @@
           <ScalarProperty Name="URL" ColumnName="URL" />
           <ScalarProperty Name="Company" ColumnName="Company" />
           <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

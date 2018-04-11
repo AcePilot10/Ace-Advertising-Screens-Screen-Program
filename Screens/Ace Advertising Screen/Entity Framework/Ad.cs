@@ -19,5 +19,6 @@ namespace Ace_Advertising_Screen.Entity_Framework
         public string URL { get; set; }
         public string Company { get; set; }
         public Nullable<double> Duration { get; set; }
+        public int ID { get; set; }
     }
 }

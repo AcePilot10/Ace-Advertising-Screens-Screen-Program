@@ -38,9 +38,9 @@ namespace Ace_Advertising_Screen.Content
         const string FILE_NAME_SIDE_2 = "/side2Image.jpg";
         private string baseDirectory = System.AppDomain.CurrentDomain.BaseDirectory;
         #region Lists
-        public List<string> sidePanel1Content;
-        public List<string> sidePanel2Content;
-        public List<string> mainPanelContent;
+        public List<int> sidePanel1Content;
+        public List<int> sidePanel2Content;
+        public List<int> mainPanelContent;
         #endregion
         #region Current Indexes
         public int currentMainIndex = 0;
@@ -52,9 +52,9 @@ namespace Ace_Advertising_Screen.Content
         public ContentManager()
         {
             context = new AdContext();
-            sidePanel1Content = new List<string>();
-            sidePanel2Content = new List<string>();
-            mainPanelContent = new List<string>();
+            sidePanel1Content = new List<int>();
+            sidePanel2Content = new List<int>();
+            mainPanelContent = new List<int>();
             ContentTimerManager.OnScreenTimerComplete += OnContentTimerComplete;
             LoadContent();
         }
@@ -67,18 +67,18 @@ namespace Ace_Advertising_Screen.Content
                     String venue = ad.Venue;
                     if (venue == MainWindow.VENUE_NAME)
                     {
-                        string url = ad.URL;
+                        int id = ad.ID;
                         int content = int.Parse(ad.Content_Type);
                         switch (content)
                         {
                             case CONTENT_MAIN:
-                                mainPanelContent.Add(url);
+                                mainPanelContent.Add(id);
                                 break;
                             case CONTENT_SIDE_1:
-                                sidePanel1Content.Add(url);
+                                sidePanel1Content.Add(id);
                                 break;
                             case CONTENT_SIDE_2:
-                                sidePanel2Content.Add(url);
+                                sidePanel2Content.Add(id);
                                 break;
                         }
                     }
@@ -146,6 +146,17 @@ namespace Ace_Advertising_Screen.Content
             destination.Close();
             MainWindow.instance.SetContent(content, uri);
         }
+        private string GetUrl(int id)
+        {
+            foreach (Ad ad in context.Ads)
+            {
+                if (ad.ID == id)
+                {
+                    return ad.URL;
+                }
+            }
+            return null;
+        }
         public void SetNextContent(Enumerators.Content content)
         {
             switch (content)
@@ -153,7 +164,7 @@ namespace Ace_Advertising_Screen.Content
                 case Enumerators.Content.MAIN:
                     if (currentMainIndex <= mainPanelContent.Count - 1)
                     {
-                        String fileName = mainPanelContent[currentMainIndex];
+                        string fileName = GetUrl(mainPanelContent[currentMainIndex]);
                         DownloadAndSetContent(content, fileName);
                         currentMainIndex++;
                     }
@@ -166,7 +177,7 @@ namespace Ace_Advertising_Screen.Content
                 case Enumerators.Content.SIDE_1:
                     if (currentSide1Index <= sidePanel1Content.Count - 1)
                     {
-                        String fileName = sidePanel1Content[currentSide1Index];
+                        String fileName = GetUrl(sidePanel1Content[currentSide1Index]);
                         DownloadAndSetContent(content, fileName);
                         currentSide1Index++;
                     }
@@ -179,7 +190,7 @@ namespace Ace_Advertising_Screen.Content
                 case Enumerators.Content.SIDE_2:
                     if (currentSide2Index <= sidePanel2Content.Count - 1)
                     {
-                        String fileName = sidePanel2Content[currentSide2Index];
+                        String fileName = GetUrl(sidePanel2Content[currentSide2Index]);
                         DownloadAndSetContent(content, fileName);
                         currentSide2Index++;
                     }
@@ -192,6 +203,22 @@ namespace Ace_Advertising_Screen.Content
             }
         }
         #endregion
+        public double? GetDuration(int adId)
+        {
+            foreach (Ad ad in context.Ads)
+            {
+                string venue = ad.Venue;
+                int id = ad.ID;
+                if (venue == Properties.Settings.Default.Venue)
+                {
+                    if (id == adId)
+                    {
+                        return ad.Duration;
+                    }
+                }
+            }
+            return 5;
+        }
         public void ResetContent()
         {
             //1: Clear arrays
@@ -216,15 +243,24 @@ namespace Ace_Advertising_Screen.Content
             {
                 case Enumerators.Content.MAIN:
                     SetNextContent(Enumerators.Content.MAIN);
-                    ContentTimerManager.GetInstance().StartNewTimer(Enumerators.Content.MAIN, 5f);
+                    int idMain = mainPanelContent[currentMainIndex-1];
+                    double? durationMain = GetDuration(idMain);
+                    Console.WriteLine(durationMain);
+                    ContentTimerManager.GetInstance().StartNewTimer(Enumerators.Content.MAIN, (float)durationMain);
                     break;
                 case Enumerators.Content.SIDE_1:
                     SetNextContent(Enumerators.Content.SIDE_1);
-                    ContentTimerManager.GetInstance().StartNewTimer(Enumerators.Content.SIDE_1, 5f);
+                    int idSide1 = sidePanel1Content[currentSide1Index-1];
+                    double? durationSide1 = GetDuration(idSide1);
+                    Console.WriteLine(durationSide1);
+                    ContentTimerManager.GetInstance().StartNewTimer(Enumerators.Content.SIDE_1, (float)durationSide1);
                     break;
                 case Enumerators.Content.SIDE_2:
                     SetNextContent(Enumerators.Content.SIDE_2);
-                    ContentTimerManager.GetInstance().StartNewTimer(Enumerators.Content.SIDE_2, 5f);
+                    int idSide2 = sidePanel2Content[currentSide2Index-1];
+                    double? durationSide2 = GetDuration(idSide2);
+                    Console.WriteLine(durationSide2);
+                    ContentTimerManager.GetInstance().StartNewTimer(Enumerators.Content.SIDE_2, (float)durationSide2);
                     break;
             }
         }

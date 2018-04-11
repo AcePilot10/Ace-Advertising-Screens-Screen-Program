@@ -23,12 +23,15 @@ namespace Ace_Advertising_Screen.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Setting {
+        public string Venue {
             get {
-                return ((string)(this["Setting"]));
+                return ((string)(this["Venue"]));
+            }
+            set {
+                this["Venue"] = value;
             }
         }
     }

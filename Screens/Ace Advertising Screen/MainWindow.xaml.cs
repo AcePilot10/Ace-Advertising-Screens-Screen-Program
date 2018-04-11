@@ -1,6 +1,7 @@
 ﻿using Ace_Advertising_Screen.Content;
 using Ace_Advertising_Screen.Enumerators;
 using System;
+using System.Configuration;
 using System.Reflection;
 using System.Resources;
 using System.Windows;
@@ -20,7 +21,7 @@ namespace Ace_Advertising_Screen
         {
             InitializeComponent();
             instance = this;
-            InitContent();
+            CheckRegistration();
         }
         private void InitContent()
         {
@@ -31,13 +32,29 @@ namespace Ace_Advertising_Screen
         #endregion
         #region Funcionality
         #region Registration
+        private void CheckRegistration()
+        {
+            String venue = Properties.Settings.Default.Venue;
+            if (venue.Length > 0)
+            {
+                InitContent();
+            }
+            else
+            {
+                MessageBox.Show("Welcome to Ace Advertising Screens! To continue, please register this client with a venue name");
+                ShowScreen(Screen.REGISTER);
+            }
+        }
         public void Register()
         {
             String venueName = txtVenueName.Text;
             if (venueName.Length > 0)
             {
+                Properties.Settings.Default.Properties["Venue"].DefaultValue = venueName;
+                Properties.Settings.Default.Venue = venueName;
+                Properties.Settings.Default.Save();
+                MessageBox.Show("Succesfully Registered: " + Properties.Settings.Default.Properties["Venue"].DefaultValue);
                 InitContent();
-                ShowScreen(Screen.CONTENT);
             }
             else
             {
@@ -91,6 +108,5 @@ namespace Ace_Advertising_Screen
             Register();
         }
         #endregion
-
     }
 }
