@@ -18,11 +18,9 @@ namespace Ace_Advertising_Screens_Admin
 {
     public partial class MainWindow : Window
     {
-
         #region References
         private AdDatabase context;
         #endregion
-
         public MainWindow()
         {
             InitializeComponent();
@@ -30,7 +28,6 @@ namespace Ace_Advertising_Screens_Admin
             InitVenueView();
             InitComboCreateVenues();
         }
-
         #region Venue View
         #region Initialization Functions
         private void InitVenueView()
@@ -83,10 +80,8 @@ namespace Ace_Advertising_Screens_Admin
         }
         #endregion
         #endregion
-
         #region Create Ad
         #region Initialization
-
         private void InitComboCreateVenues()
         {
             LoopAds(delegate(Ad ad) {
@@ -100,9 +95,7 @@ namespace Ace_Advertising_Screens_Admin
             ComboCreateContentType.Items.Add("Side 1");
             ComboCreateContentType.Items.Add("Side 2");
         }
-
         #endregion
-
         #region Listeners
         public void OnCreateAdClick(object sender, EventArgs args)
         {
@@ -125,7 +118,6 @@ namespace Ace_Advertising_Screens_Admin
 
         #endregion
         #endregion
-
         #region Shared
         public delegate void LoopAdAction(Ad ad);
 
